@@ -1,18 +1,15 @@
 /*1. color general de la lletra negra*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color:#111111;}
+color:black;}
 
 /*2. titol nivell 1 fons blanc lletra gris*/
 h1{
-background-color: white;
-color: grey;}
+background-color:white;}
 
 /*3. tots els strong en color verd i subratllats*/
-.paragraf1 strong{
-color: green;
-text-decoration: underline;}
+strong{
+color:green;
+text-decoration:underline;}
 
 /*4. enllaços del paràgraf2 en italica*/
 
