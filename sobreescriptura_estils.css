@@ -4,16 +4,61 @@ color:black;}
 
 /*2. titol nivell 1 fons blanc lletra gris*/
 h1{
-background-color:white;}
+background-color:white; <!--
+color:grey;}
 
 /*3. tots els strong en color verd i subratllats*/
-strong{
+strong{ /*Canviem les negreta a color verd i subratllades*/
 color:green;
 text-decoration:underline;}
 
-/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 strong{ /*En aquest cas, com l'etiqueta "paragraf2" té més prioritat, la declarem de nou per sobreescriure-la*/
+color:green;}
 
+
+/*4. enllaços del paràgraf2 en italica*/
+.paragraf2 a {
+font-style:italic;}
 
 /*5. footer general del web centrat i lletra de 10px*/
+#container > footer:last-child {
+  text-align: center;
+  font-size: 10px;
+  }
+
 
 /*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+/* a) Al canviar l'ordre de càrrega, canvien les modificacions de l'h1 i els strong.
+    En canvi, es manté la modificació del footer.*/
+/* b) Si volgués que es mantingués igual tot invertint l'ordre de càrrega dels arxius,
+ ficaria "!important" al costat de les etiquetes, tot i que s'ha de fer servir amb moderació
+
+EXEMPLE DE CODI PER MANTINDRE LES PROPIETATS:
+
+ body{
+ color:black !important;}
+
+
+ h1{
+ background-color:white!important;
+ color:grey !important;}
+
+
+ strong{
+ color:green !important;
+ text-decoration:underline !important;}
+
+ .paragraf2 strong{
+ color:green !important;}
+
+
+
+ .paragraf2 a {
+ font-style:italic !important;}
+
+
+ #container > footer:last-child {
+   text-align: center;
+   font-size: 10px !important;
+   }
+   */
